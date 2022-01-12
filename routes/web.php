@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 
 Route::name('student.')->prefix('student')->namespace('Student')->group(function(){
+
     Route::get('index','StudentController@index')->name('index');
     Route::post('store','StudentController@storeOrUpdate')->name('store');
     Route::get('view/{id}','StudentController@view')->name('view');

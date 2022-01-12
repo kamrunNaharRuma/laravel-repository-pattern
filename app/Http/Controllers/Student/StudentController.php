@@ -18,6 +18,7 @@ class StudentController extends Controller
         $this->student = $student;
     }
     public function index(){
+        dd("here");
         return $this->student->getAllData();
     }
 }
