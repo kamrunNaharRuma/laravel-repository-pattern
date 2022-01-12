@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Repository\Student\StudentInterface;
-use App\Repository\Student\StudentRepository;
+use App\Repository\StudentInterface;;
+use App\Repository\StudentRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
