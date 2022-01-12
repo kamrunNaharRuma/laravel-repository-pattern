@@ -1,5 +1,5 @@
 <?php
-namespace App\Repository\Student;
+namespace App\Repository;
 
 use App\Models\Student;
 
