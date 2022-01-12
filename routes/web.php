@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Student\StudentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,11 +18,13 @@ Route::get('/', function () {
 });
 
 
-Route::name('student.')->prefix('student')->namespace('Student')->group(function(){
+// Route::name('student.')->prefix('student')->namespace('Student')->group(function(){
 
-    Route::get('index','StudentController@index')->name('index');
-    Route::post('store','StudentController@storeOrUpdate')->name('store');
-    Route::get('view/{id}','StudentController@view')->name('view');
-    Route::put('update/{id}','StudentController@storeOrUpdate')->name('update');
-    Route::get('delete/{id}','StudentController@delete')->name('delete');
-});
+    
+//     Route::post('store','StudentController@storeOrUpdate')->name('store');
+//     Route::get('view/{id}','StudentController@view')->name('view');
+//     Route::put('update/{id}','StudentController@storeOrUpdate')->name('update');
+//     Route::get('delete/{id}','StudentController@delete')->name('delete');
+// });
+
+Route::get('/index',[StudentController::class, 'index']);
